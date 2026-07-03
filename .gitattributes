@@ -1,0 +1,12 @@
+# File: Git attributes.
+# Intent: Normalize repository text files to CRLF for this Windows-focused project.
+
+* text=auto eol=crlf
+
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.exe binary
+

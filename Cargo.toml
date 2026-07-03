@@ -1,0 +1,19 @@
+# Cargo package manifest for the Electron detector CLI.
+[package]
+name = "electron-detector"
+version = "0.1.0"
+edition = "2021"
+description = "Windows CLI for detecting running and installed Electron applications."
+license = "MIT"
+readme = "README.md"
+keywords = ["electron", "windows", "ntfs", "cli"]
+categories = ["command-line-utilities"]
+
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+windows = { version = "0.58", features = [
+    "Win32_Foundation",
+    "Win32_Storage_FileSystem",
+    "Win32_System_IO",
+] }
